@@ -2,7 +2,7 @@ Summary:	Filesystem visualization for Bash and Zsh
 Summary(pl.UTF-8):	Wizualizacja systemu plików dla Basha i Zsh
 Name:		viewglob
 Version:	2.0.4
-Release:	0.1
+Release:	0.2
 License:	GPL v2
 Group:		X11/Applications
 Source0:	http://dl.sourceforge.net/viewglob/%{name}-%{version}.tar.gz
@@ -50,6 +50,16 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog HACKING NEWS README TODO
-%attr(755,root,root) %{_bindir}/*
-%{_libdir}/viewglob
+%attr(755,root,root) %{_bindir}/vgd
+%attr(755,root,root) %{_bindir}/vgseer
+%attr(755,root,root) %{_bindir}/viewglob
+%dir %{_libdir}/viewglob
+%{_libdir}/viewglob/.zshrc
+%{_libdir}/viewglob/init-viewglob.bashrc
+%attr(755,root,root) %{_libdir}/viewglob/conf-to-args.sh
+%attr(755,root,root) %{_libdir}/viewglob/getopt.sh
+%attr(755,root,root) %{_libdir}/viewglob/vgclassic
+%attr(755,root,root) %{_libdir}/viewglob/vgexpand
+%attr(755,root,root) %{_libdir}/viewglob/vgmini
+%attr(755,root,root) %{_libdir}/viewglob/vgping
 %{_mandir}/man?/*
