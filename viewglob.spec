@@ -3,13 +3,14 @@ Summary(pl.UTF-8):	Wizualizacja systemu plików dla Basha i Zsh
 Name:		viewglob
 Version:	2.0.4
 Release:	0.2
-License:	GPL v2
+License:	GPL v2+
 Group:		X11/Applications
 Source0:	http://dl.sourceforge.net/viewglob/%{name}-%{version}.tar.gz
 # Source0-md5:	7956a2e922a716bd0da30488e4ffb486
 URL:		http://viewglob.sourceforge.net/
 BuildRequires:	glib2-devel >= 1:2.2
 BuildRequires:	gtk+2-devel >= 2:2.4
+BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
