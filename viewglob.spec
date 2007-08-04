@@ -24,12 +24,31 @@ The package has three communicating parts:
 - vgseer, client: Supervises an interactive shell and keeps track of
   command line and environment changes.
 - vgd, server daemon: Mediates information exchange between any number
-  of vgseer pro- cesses (local or remote) and a Viewglob display.
+  of vgseer processes (local or remote) and a Viewglob display.
 - vgmini and vgclassic, graphical displays: List the contents of
   directories relevant to the currently active shell, highlighting file
   selections and potential name completions.
 
 A convenience script "viewglob" is provided as a startup shortcut.
+
+%description -l pl.UTF-8
+Viewglob to dodatek wizualizujący system plików dla Basha i Zsh.
+Śledzi linię poleceń i środowisko dowolnej liczby interaktywnych
+powłok (lokalnych i zdalnych). Graficzny wyświetlacz podąża za
+aktualnie aktywnym terminalem, wyświetlając zawartość katalogów
+odpowiednich dla tej powłoki i podświetlając dynamicznie wybory plików
+oraz potencjalne dopełnienia nazw.
+
+Ten pakiet ma trzy komunikujące się części:
+- klient vgseer - nadzoruje powłokę interaktywną i śledzi zmiany linii
+  poleceń oraz środowiska
+- demon serwera vgd - pośredniczy wymianie danych między dowolną liczbą
+  (lokalnych lub zdalnych) procesów vgseer i wyświetlaczem Viewgloba
+- graficzne wyświetlacze vgmini i vgclassic - wyświetlają zawartości
+  katalogów odpowiadające aktualnie aktywnym powłokom, podświetlając
+  wybory plików i potencjalne dopełnienia nazw.
+
+Jako ułatwienie uruchamiania dołączony jest skrypt "viewglob".
 
 %prep
 %setup -q
